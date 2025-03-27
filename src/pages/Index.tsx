@@ -6,8 +6,10 @@ import QuemSomos from '../components/QuemSomos';
 import MissaoVisaoValores from '../components/MissaoVisaoValores';
 import AreasAtuacao from '../components/AreasAtuacao';
 import Diferenciais from '../components/Diferenciais';
+import ConsultoriaPolitica from '../components/ConsultoriaPolitica';
 import CursosSection from '../components/CursosSection';
 import Footer from '../components/Footer';
+import SocialButtons from '../components/SocialButtons';
 
 const Index = () => {
   useEffect(() => {
@@ -21,11 +23,13 @@ const Index = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
+      <SocialButtons />
       <main className="flex-grow">
         <Hero />
         <QuemSomos />
         <MissaoVisaoValores />
         <AreasAtuacao />
+        <ConsultoriaPolitica />
         <Diferenciais />
         <CursosSection />
       </main>

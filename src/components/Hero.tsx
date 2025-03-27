@@ -1,5 +1,5 @@
 
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Book } from 'lucide-react';
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -35,8 +35,9 @@ const Hero = () => {
               </button>
               <button 
                 onClick={() => window.location.href = '/cursos'}
-                className="bg-white text-mq-blue px-6 py-3 rounded-md font-medium transition-all hover:bg-gray-100"
+                className="bg-white text-mq-blue px-6 py-3 rounded-md font-medium transition-all hover:bg-gray-100 flex items-center"
               >
+                <Book className="mr-2" size={18} />
                 Plataforma de Cursos
               </button>
             </div>

@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Book } from 'lucide-react';
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,7 +32,7 @@ export const Header = () => {
     >
       <div className="container-custom flex items-center justify-between">
         <Link to="/" className="flex items-center">
-          <div className="text-2xl font-bold text-mq-blue flex items-center">
+          <div className={`text-2xl font-bold ${isScrolled ? 'text-mq-blue' : 'text-white'} flex items-center`}>
             <span className="text-3xl font-display">MQ</span>
             <span className="ml-2 text-sm hidden md:block">Michele Queiroz</span>
           </div>
@@ -40,26 +40,27 @@ export const Header = () => {
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex items-center space-x-8">
-          <Link to="/" className="text-mq-blue-800 hover:text-mq-light-blue transition-colors">
+          <Link to="/" className={`${isScrolled ? 'text-mq-blue-800' : 'text-white'} hover:text-mq-light-blue transition-colors`}>
             Início
           </Link>
-          <Link to="/#quem-somos" className="text-mq-blue-800 hover:text-mq-light-blue transition-colors">
+          <Link to="/#quem-somos" className={`${isScrolled ? 'text-mq-blue-800' : 'text-white'} hover:text-mq-light-blue transition-colors`}>
             Quem Somos
           </Link>
-          <Link to="/#servicos" className="text-mq-blue-800 hover:text-mq-light-blue transition-colors">
+          <Link to="/#servicos" className={`${isScrolled ? 'text-mq-blue-800' : 'text-white'} hover:text-mq-light-blue transition-colors`}>
             Serviços
           </Link>
-          <Link to="/#contato" className="text-mq-blue-800 hover:text-mq-light-blue transition-colors">
+          <Link to="/#contato" className={`${isScrolled ? 'text-mq-blue-800' : 'text-white'} hover:text-mq-light-blue transition-colors`}>
             Contato
           </Link>
-          <Link to="/cursos" className="btn-primary py-2">
+          <Link to="/cursos" className="btn-primary py-2 flex items-center">
+            <Book className="mr-2" size={18} />
             Cursos
           </Link>
         </nav>
 
         {/* Mobile Menu Button */}
         <button 
-          className="md:hidden text-mq-blue"
+          className={`md:hidden ${isScrolled ? 'text-mq-blue' : 'text-white'}`}
           onClick={toggleMobileMenu}
           aria-label="Toggle mobile menu"
         >
@@ -101,9 +102,10 @@ export const Header = () => {
             </Link>
             <Link 
               to="/cursos" 
-              className="btn-primary text-center"
+              className="btn-primary text-center flex items-center justify-center"
               onClick={() => setIsMobileMenuOpen(false)}
             >
+              <Book className="mr-2" size={18} />
               Cursos
             </Link>
           </div>
