@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,11 +16,11 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 210 100% 34%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 197 100% 46%;
+    --secondary-foreground: 210 40% 98%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
@@ -35,19 +38,12 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -79,6 +75,7 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
+    
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -96,6 +93,88 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-mq-blue text-white px-6 py-3 rounded-md font-medium transition-all hover:bg-mq-blue-700 active:bg-mq-blue-800 focus:ring-2 focus:ring-mq-blue-300 focus:outline-none;
+  }
+
+  .btn-secondary {
+    @apply bg-mq-light-blue text-white px-6 py-3 rounded-md font-medium transition-all hover:bg-mq-light-blue-600 active:bg-mq-light-blue-700 focus:ring-2 focus:ring-mq-light-blue-300 focus:outline-none;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-4 text-mq-blue;
+  }
+
+  .section-subtitle {
+    @apply text-xl md:text-2xl font-medium mb-6 text-mq-light-blue;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-md rounded-xl shadow-lg;
+  }
+}
+
+/* Efeitos de scroll e transições suaves */
+html {
+  scroll-behavior: smooth;
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Estilo para o logo */
+.logo-glow {
+  filter: drop-shadow(0 0 5px rgba(14, 165, 233, 0.5));
+}
+
+/* Estilização de sessões */
+.bg-blue-gradient {
+  background: linear-gradient(135deg, #0046AD 0%, #0EA5E9 100%);
+}
+
+.bg-curve-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0c5.523 0 10 4.477 10 10s-4.477 10-10 10v-2c4.418 0 8-3.582 8-8s-3.582-8-8-8V0zm10 0c5.523 0 10 4.477 10 10s-4.477 10-10 10v-2c4.418 0 8-3.582 8-8s-3.582-8-8-8V0z' fill='%230EA5E9' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
 }

@@ -1,12 +1,35 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { useEffect } from 'react';
+import Header from '../components/Header';
+import Hero from '../components/Hero';
+import QuemSomos from '../components/QuemSomos';
+import MissaoVisaoValores from '../components/MissaoVisaoValores';
+import AreasAtuacao from '../components/AreasAtuacao';
+import Diferenciais from '../components/Diferenciais';
+import CursosSection from '../components/CursosSection';
+import Footer from '../components/Footer';
 
 const Index = () => {
+  useEffect(() => {
+    // Scroll to top when component mounts
+    window.scrollTo(0, 0);
+
+    // Update title
+    document.title = "Michele Queiroz | Mentoria e Consultoria";
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="flex flex-col min-h-screen">
+      <Header />
+      <main className="flex-grow">
+        <Hero />
+        <QuemSomos />
+        <MissaoVisaoValores />
+        <AreasAtuacao />
+        <Diferenciais />
+        <CursosSection />
+      </main>
+      <Footer />
     </div>
   );
 };
