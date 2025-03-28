@@ -1,5 +1,5 @@
 
-import { ChevronDown, Book } from 'lucide-react';
+import { ChevronDown, Book, Calendar, BarChart } from 'lucide-react';
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -51,11 +51,9 @@ const Hero = () => {
           <div className="hidden md:flex justify-center animate-zoom-in">
             <div className="relative w-80 h-80">
               <div className="absolute inset-0 bg-mq-light-blue/20 backdrop-blur-sm rounded-full animate-float"></div>
-              <img 
-                src="/public/lovable-uploads/d0f47c10-8f2b-4e19-b944-edde9bb98f3b.png" 
-                alt="Logo Michele Queiroz" 
-                className="absolute inset-0 w-full h-full object-contain p-8 logo-glow"
-              />
+              <div className="absolute inset-0 flex items-center justify-center p-8">
+                <BarChart className="w-40 h-40 text-white/80 logo-glow" />
+              </div>
             </div>
           </div>
         </div>

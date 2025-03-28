@@ -8,6 +8,7 @@ import AreasAtuacao from '../components/AreasAtuacao';
 import Diferenciais from '../components/Diferenciais';
 import ConsultoriaPolitica from '../components/ConsultoriaPolitica';
 import CursosSection from '../components/CursosSection';
+import AppointmentForm from '../components/AppointmentForm';
 import Footer from '../components/Footer';
 import SocialButtons from '../components/SocialButtons';
 
@@ -32,6 +33,30 @@ const Index = () => {
         <ConsultoriaPolitica />
         <Diferenciais />
         <CursosSection />
+        
+        {/* Appointment Form Section */}
+        <section id="contato" className="py-16 bg-gray-50">
+          <div className="container-custom">
+            <div className="max-w-4xl mx-auto text-center mb-12 animate-fade-in">
+              <div className="flex justify-center mb-6">
+                <div className="w-16 h-16 rounded-full bg-mq-blue/10 flex items-center justify-center">
+                  <Calendar className="w-8 h-8 text-mq-blue" />
+                </div>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold text-mq-blue mb-6">
+                Agende uma Reunião
+              </h2>
+              <div className="w-24 h-1 bg-mq-light-blue mx-auto mb-8"></div>
+              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+                Vamos trabalhar juntos? Agende uma reunião e transforme suas ideias em resultados concretos.
+              </p>
+            </div>
+            
+            <div className="max-w-3xl mx-auto animate-fade-in">
+              <AppointmentForm />
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
     </div>
