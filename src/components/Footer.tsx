@@ -1,4 +1,5 @@
 import { Instagram, Mail, Phone, MapPin } from 'lucide-react';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const Footer = () => {
   return (
@@ -116,9 +117,15 @@ const Footer = () => {
         <div className="mt-16 pt-8 border-t border-white/10 text-center">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
-              <div className="h-16 w-16 bg-mq-light-blue rounded-full flex items-center justify-center text-white font-bold text-3xl mx-auto md:mx-0">
-                MQ
-              </div>
+              <Avatar className="h-16 w-16 mx-auto md:mx-0 border-2 border-mq-light-blue">
+                <AvatarImage 
+                  src="/public/lovable-uploads/148a8dab-56cf-4074-8f11-9f764cf6cf57.png" 
+                  alt="Michele Queiroz" 
+                />
+                <AvatarFallback className="bg-mq-light-blue text-white font-bold text-xl">
+                  MQ
+                </AvatarFallback>
+              </Avatar>
             </div>
             <div className="text-white/60 text-sm">
               © {new Date().getFullYear()} Michele Queiroz. Todos os direitos reservados.
