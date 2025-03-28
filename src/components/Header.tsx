@@ -84,8 +84,10 @@ export const Header = () => {
                     </li>
                     <li>
                       <NavigationMenuLink asChild>
-                        <Link 
-                          to="/#servicos"
+                        <a 
+                          href="https://gestorpostagem.mqconsultoria.marketing/login"
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                           onClick={() => setIsMobileMenuOpen(false)}
                         >
@@ -93,7 +95,7 @@ export const Header = () => {
                           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                             Planejamento de conteúdo para redes sociais
                           </p>
-                        </Link>
+                        </a>
                       </NavigationMenuLink>
                     </li>
                     <li>
@@ -165,13 +167,15 @@ export const Header = () => {
                 >
                   Consultoria Política
                 </Link>
-                <Link 
-                  to="/#servicos" 
+                <a 
+                  href="https://gestorpostagem.mqconsultoria.marketing/login"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block text-mq-blue-600 hover:text-mq-light-blue transition-colors py-1"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Agenda de Postagens
-                </Link>
+                </a>
                 <Link 
                   to="/#servicos" 
                   className="block text-mq-blue-600 hover:text-mq-light-blue transition-colors py-1"
