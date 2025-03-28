@@ -15,9 +15,9 @@ const CursosSection = () => {
             Invista em sua formação e desenvolva habilidades essenciais para liderança, equipes e atuação política
           </p>
           <div className="flex justify-center">
-            <Link to="/cursos" className="btn-primary">
+            <a href="https://portifolio.mqconsultoria.marketing/" target="_blank" rel="noopener noreferrer" className="btn-primary">
               Acessar Plataforma
-            </Link>
+            </a>
           </div>
         </div>
 
@@ -102,12 +102,12 @@ const CursosSection = () => {
           <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
             Acesse agora nossa plataforma completa de cursos e comece sua jornada de desenvolvimento profissional.
           </p>
-          <Link to="/cursos" className="btn-primary inline-flex items-center">
+          <a href="https://portifolio.mqconsultoria.marketing/" target="_blank" rel="noopener noreferrer" className="btn-primary inline-flex items-center">
             <span>Ver todos os cursos</span>
             <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
             </svg>
-          </Link>
+          </a>
         </div>
       </div>
     </section>
