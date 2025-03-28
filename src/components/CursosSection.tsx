@@ -12,7 +12,7 @@ const CursosSection = () => {
           </h2>
           <div className="w-24 h-1 bg-mq-light-blue mx-auto mb-8"></div>
           <p className="text-gray-700 text-lg mb-8">
-            Invista em sua formação e desenvolva habilidades essenciais para o mercado atual
+            Invista em sua formação e desenvolva habilidades essenciais para liderança, equipes e atuação política
           </p>
           <div className="flex justify-center">
             <Link to="/cursos" className="btn-primary">
@@ -26,22 +26,22 @@ const CursosSection = () => {
             <div className="w-16 h-16 rounded-full bg-mq-blue/10 flex items-center justify-center mb-6">
               <Book className="w-8 h-8 text-mq-blue" />
             </div>
-            <h3 className="text-2xl font-bold text-mq-blue mb-4">Cursos Especializados</h3>
+            <h3 className="text-2xl font-bold text-mq-blue mb-4">Desenvolvimento de Pessoas</h3>
             <p className="text-gray-700 mb-6">
-              Conteúdo desenvolvido por especialistas do mercado com foco em aplicações práticas.
+              Cursos focados no desenvolvimento de habilidades pessoais e profissionais para líderes e equipes.
             </p>
             <ul className="text-gray-700 space-y-2">
               <li className="flex items-start">
                 <span className="text-mq-light-blue mr-2">•</span>
-                <span>Marketing Digital</span>
+                <span>Liderança e Gestão</span>
               </li>
               <li className="flex items-start">
                 <span className="text-mq-light-blue mr-2">•</span>
-                <span>Branding e Identidade Visual</span>
+                <span>Inteligência Emocional</span>
               </li>
               <li className="flex items-start">
                 <span className="text-mq-light-blue mr-2">•</span>
-                <span>Comunicação Estratégica</span>
+                <span>Comunicação Efetiva</span>
               </li>
             </ul>
           </div>
@@ -50,22 +50,22 @@ const CursosSection = () => {
             <div className="w-16 h-16 rounded-full bg-mq-light-blue/10 flex items-center justify-center mb-6">
               <TrendingUp className="w-8 h-8 text-mq-light-blue" />
             </div>
-            <h3 className="text-2xl font-bold text-mq-blue mb-4">Metodologia Prática</h3>
+            <h3 className="text-2xl font-bold text-mq-blue mb-4">Treinamento Organizacional</h3>
             <p className="text-gray-700 mb-6">
-              Aprenda com exemplos reais e aplicações práticas que você pode implementar imediatamente.
+              Formação para desenvolver equipes de alto desempenho dentro de organizações públicas e privadas.
             </p>
             <ul className="text-gray-700 space-y-2">
               <li className="flex items-start">
                 <span className="text-mq-light-blue mr-2">•</span>
-                <span>Estudos de caso reais</span>
+                <span>Gestão de Equipes</span>
               </li>
               <li className="flex items-start">
                 <span className="text-mq-light-blue mr-2">•</span>
-                <span>Projetos práticos guiados</span>
+                <span>Cultura Organizacional</span>
               </li>
               <li className="flex items-start">
                 <span className="text-mq-light-blue mr-2">•</span>
-                <span>Mentorias personalizadas</span>
+                <span>Resolução de Conflitos</span>
               </li>
             </ul>
           </div>
@@ -74,22 +74,22 @@ const CursosSection = () => {
             <div className="w-16 h-16 rounded-full bg-mq-orange/10 flex items-center justify-center mb-6">
               <Award className="w-8 h-8 text-mq-orange" />
             </div>
-            <h3 className="text-2xl font-bold text-mq-blue mb-4">Certificação Profissional</h3>
+            <h3 className="text-2xl font-bold text-mq-blue mb-4">Assessoria Política</h3>
             <p className="text-gray-700 mb-6">
-              Obtenha certificados reconhecidos pelo mercado e impulsione sua carreira.
+              Cursos especializados para atuação política em todas as fases da campanha.
             </p>
             <ul className="text-gray-700 space-y-2">
               <li className="flex items-start">
                 <span className="text-mq-light-blue mr-2">•</span>
-                <span>Certificados digitais</span>
+                <span>Pré-campanha</span>
               </li>
               <li className="flex items-start">
                 <span className="text-mq-light-blue mr-2">•</span>
-                <span>Acesso vitalício ao conteúdo</span>
+                <span>Estratégias de Campanha</span>
               </li>
               <li className="flex items-start">
                 <span className="text-mq-light-blue mr-2">•</span>
-                <span>Atualizações constantes</span>
+                <span>Pós-campanha e Mandato</span>
               </li>
             </ul>
           </div>

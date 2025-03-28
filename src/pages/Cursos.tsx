@@ -7,12 +7,12 @@ import {
   Clock, 
   Users, 
   Award,
-  Layers,
-  BarChart,
-  Monitor,
+  BriefcaseBusiness,
   Target,
+  UserCog,
   CheckCircle,
-  Heart
+  Heart,
+  GraduationCap
 } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -29,61 +29,61 @@ const Cursos = () => {
   const cursos = [
     {
       id: 1,
-      title: "Marketing Digital Completo",
-      description: "Aprenda a criar e gerenciar campanhas digitais de sucesso",
-      icon: <Monitor className="w-10 h-10" />,
+      title: "Liderança e Gestão de Pessoas",
+      description: "Desenvolva habilidades essenciais para liderar equipes com eficácia",
+      icon: <Users className="w-10 h-10" />,
       duration: "40 horas",
-      level: "Iniciante a Intermediário",
+      level: "Intermediário",
       benefits: [
-        "Estratégias de marketing digital",
-        "SEO e otimização para buscadores",
-        "Gestão de redes sociais",
-        "Análise de métricas e resultados"
+        "Técnicas de liderança situacional",
+        "Gestão de equipes multidisciplinares",
+        "Feedback construtivo e desenvolvimento de talentos",
+        "Inteligência emocional aplicada à liderança"
       ],
       color: "mq-blue"
     },
     {
       id: 2,
-      title: "Branding e Identidade Visual",
-      description: "Desenvolva marcas memoráveis e identidades visuais impactantes",
-      icon: <Layers className="w-10 h-10" />,
+      title: "Desenvolvimento Comportamental",
+      description: "Aprimore suas habilidades interpessoais e comportamentais para o ambiente profissional",
+      icon: <UserCog className="w-10 h-10" />,
       duration: "35 horas",
-      level: "Intermediário",
+      level: "Todos os níveis",
       benefits: [
-        "Estratégias de posicionamento de marca",
-        "Criação de elementos visuais",
-        "Design de logo e materiais corporativos",
-        "Gestão da reputação da marca"
+        "Autoconhecimento e regulação emocional",
+        "Comunicação assertiva e empática",
+        "Resolução de conflitos e negociação",
+        "Adaptabilidade e resiliência"
       ],
       color: "mq-light-blue"
     },
     {
       id: 3,
-      title: "Marketing Político",
-      description: "Estratégias eficientes para campanhas políticas de sucesso",
+      title: "Assessoria Política Completa",
+      description: "Estratégias eficientes para todas as fases da campanha política",
       icon: <Target className="w-10 h-10" />,
-      duration: "45 horas",
+      duration: "48 horas",
       level: "Avançado",
       benefits: [
-        "Planejamento estratégico de campanha",
-        "Comunicação política eficiente",
-        "Mobilização e engajamento de eleitores",
-        "Gestão de crises e imagem pública"
+        "Planejamento de pré-campanha e posicionamento",
+        "Estratégias de campanha e mobilização",
+        "Gestão de crises e comunicação política",
+        "Planejamento de mandato e governança"
       ],
       color: "mq-blue"
     },
     {
       id: 4,
-      title: "Gestão de Projetos em Marketing",
-      description: "Aprenda a gerenciar projetos de marketing do início ao fim",
-      icon: <BarChart className="w-10 h-10" />,
+      title: "Treinamento Organizacional",
+      description: "Aperfeiçoe a estrutura e cultura da sua organização",
+      icon: <BriefcaseBusiness className="w-10 h-10" />,
       duration: "30 horas",
       level: "Intermediário a Avançado",
       benefits: [
-        "Métodos ágeis para equipes de marketing",
-        "Planejamento e execução de campanhas",
-        "Gestão de recursos e orçamentos",
-        "Avaliação de resultados e KPIs"
+        "Desenvolvimento de cultura organizacional",
+        "Gestão de mudanças e transformação",
+        "Processos e metodologias ágeis",
+        "Otimização de desempenho de equipes"
       ],
       color: "mq-light-blue"
     }
@@ -106,8 +106,8 @@ const Cursos = () => {
                 Plataforma de Cursos
               </h1>
               <p className="text-white/90 text-xl mb-8 max-w-2xl">
-                Desenvolva habilidades práticas e atualizadas com nossos cursos especializados em marketing, 
-                branding e comunicação estratégica.
+                Desenvolva habilidades essenciais para liderança, gestão de equipes e atuação política 
+                com nossos cursos especializados.
               </p>
               <div className="flex flex-wrap gap-4">
                 <button className="btn-secondary">
@@ -127,11 +127,11 @@ const Cursos = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-gray-50 rounded-xl p-8 flex flex-col items-center text-center">
                 <div className="w-16 h-16 rounded-full bg-mq-blue/10 flex items-center justify-center mb-4">
-                  <BookOpen className="w-8 h-8 text-mq-blue" />
+                  <GraduationCap className="w-8 h-8 text-mq-blue" />
                 </div>
-                <h3 className="text-xl font-bold text-mq-blue mb-3">Conteúdo Premium</h3>
+                <h3 className="text-xl font-bold text-mq-blue mb-3">Conteúdo Especializado</h3>
                 <p className="text-gray-700">
-                  Material didático atualizado e desenvolvido por especialistas do mercado.
+                  Material didático atualizado e desenvolvido por especialistas em desenvolvimento humano e político.
                 </p>
               </div>
               
@@ -167,7 +167,7 @@ const Cursos = () => {
               </h2>
               <div className="w-24 h-1 bg-mq-light-blue mx-auto mb-8"></div>
               <p className="text-gray-700 text-lg">
-                Explore nossos cursos especializados e desenvolva habilidades essenciais para o mercado atual
+                Explore nossos cursos especializados e desenvolva habilidades essenciais para o ambiente profissional e político
               </p>
             </div>
 
@@ -238,7 +238,7 @@ const Cursos = () => {
                 </div>
                 <div className="pt-4">
                   <p className="text-gray-700 italic mb-6">
-                    "O curso de Marketing Digital transformou minha carreira. O conteúdo prático e atualizado me permitiu implementar estratégias eficazes imediatamente."
+                    "O curso de Liderança transformou minha forma de gerir equipes. As técnicas práticas me permitiram desenvolver uma comunicação mais eficaz com meu time."
                   </p>
                   <div className="flex items-center">
                     <div className="w-12 h-12 bg-mq-blue rounded-full flex items-center justify-center text-white font-bold">
@@ -246,7 +246,7 @@ const Cursos = () => {
                     </div>
                     <div className="ml-4">
                       <h4 className="font-bold text-mq-blue">Rafael Pereira</h4>
-                      <p className="text-gray-600 text-sm">Gestor de Marketing</p>
+                      <p className="text-gray-600 text-sm">Gestor de Equipes</p>
                     </div>
                   </div>
                 </div>
@@ -258,7 +258,7 @@ const Cursos = () => {
                 </div>
                 <div className="pt-4">
                   <p className="text-gray-700 italic mb-6">
-                    "A didática dos instrutores e a qualidade do material são excepcionais. Consegui aplicar os conhecimentos no meu negócio e vi resultados rapidamente."
+                    "A consultoria política foi fundamental para organizar minha pré-campanha. As estratégias de posicionamento e comunicação fizeram toda a diferença."
                   </p>
                   <div className="flex items-center">
                     <div className="w-12 h-12 bg-mq-light-blue rounded-full flex items-center justify-center text-white font-bold">
@@ -266,7 +266,7 @@ const Cursos = () => {
                     </div>
                     <div className="ml-4">
                       <h4 className="font-bold text-mq-blue">Camila Santos</h4>
-                      <p className="text-gray-600 text-sm">Empreendedora</p>
+                      <p className="text-gray-600 text-sm">Candidata a Vereadora</p>
                     </div>
                   </div>
                 </div>
@@ -278,7 +278,7 @@ const Cursos = () => {
                 </div>
                 <div className="pt-4">
                   <p className="text-gray-700 italic mb-6">
-                    "O curso de Branding foi fundamental para reposicionar minha empresa no mercado. A abordagem estratégica e prática superou minhas expectativas."
+                    "O treinamento organizacional trouxe mudanças positivas para toda nossa instituição. A cultura organizacional melhorou e os resultados apareceram rapidamente."
                   </p>
                   <div className="flex items-center">
                     <div className="w-12 h-12 bg-mq-orange rounded-full flex items-center justify-center text-white font-bold">
@@ -286,7 +286,7 @@ const Cursos = () => {
                     </div>
                     <div className="ml-4">
                       <h4 className="font-bold text-mq-blue">Marcos Almeida</h4>
-                      <p className="text-gray-600 text-sm">Diretor de Criação</p>
+                      <p className="text-gray-600 text-sm">Diretor Institucional</p>
                     </div>
                   </div>
                 </div>
@@ -299,10 +299,10 @@ const Cursos = () => {
         <section className="py-20 bg-gradient-to-r from-mq-blue to-mq-blue-800 text-white">
           <div className="container-custom text-center">
             <h2 className="text-4xl font-bold mb-6">
-              Pronto para Impulsionar sua Carreira?
+              Pronto para Impulsionar seu Desenvolvimento?
             </h2>
             <p className="text-white/90 text-xl mb-8 max-w-2xl mx-auto">
-              Inscreva-se agora e comece sua jornada rumo ao sucesso profissional
+              Inscreva-se agora e comece sua jornada de crescimento pessoal e profissional
             </p>
             <div className="flex justify-center flex-wrap gap-4">
               <button className="bg-white text-mq-blue px-8 py-4 rounded-md font-medium text-lg transition-all hover:bg-gray-100">
