@@ -1,4 +1,3 @@
-
 import { Instagram, Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
@@ -23,7 +22,7 @@ const Footer = () => {
                 <Instagram className="w-5 h-5" />
               </a>
               <a 
-                href="mailto:michelemkt2016@gmail.com" 
+                href="mailto:contato@mqconsultoria.marketing" 
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-mq-light-blue transition-colors"
                 aria-label="Email"
               >
@@ -93,7 +92,7 @@ const Footer = () => {
               </li>
               <li className="flex">
                 <Mail className="w-5 h-5 text-mq-light-blue mr-3 shrink-0" />
-                <span className="text-white/80">michelemkt2016@gmail.com</span>
+                <span className="text-white/80">contato@mqconsultoria.marketing</span>
               </li>
               <li className="flex">
                 <Instagram className="w-5 h-5 text-mq-light-blue mr-3 shrink-0" />
