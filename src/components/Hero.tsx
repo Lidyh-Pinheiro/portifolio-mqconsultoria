@@ -41,6 +41,11 @@ const Hero = () => {
                 Plataforma de Cursos
               </button>
             </div>
+            <div className="mt-8 text-white/80">
+              <a href="mailto:contato@mqconsultoria.marketing" className="hover:text-white transition-colors">
+                contato@mqconsultoria.marketing
+              </a>
+            </div>
           </div>
           
           <div className="hidden md:flex justify-center animate-zoom-in">

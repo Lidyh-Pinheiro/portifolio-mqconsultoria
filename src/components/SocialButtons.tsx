@@ -1,5 +1,5 @@
 
-import { Instagram, MessageCircle } from 'lucide-react';
+import { Instagram, MessageCircle, Mail } from 'lucide-react';
 
 const SocialButtons = () => {
   return (
@@ -21,6 +21,15 @@ const SocialButtons = () => {
         aria-label="WhatsApp"
       >
         <MessageCircle />
+      </a>
+      <a 
+        href="mailto:contato@mqconsultoria.marketing" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="w-12 h-12 rounded-full bg-mq-light-blue flex items-center justify-center text-white shadow-lg hover:scale-110 transition-all"
+        aria-label="Email"
+      >
+        <Mail />
       </a>
     </div>
   );

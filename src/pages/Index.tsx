@@ -17,7 +17,7 @@ const Index = () => {
     window.scrollTo(0, 0);
 
     // Update title
-    document.title = "Michele Queiroz | Mentoria e Consultoria";
+    document.title = "Michele Queiroz | Mentoria e Consultoria Política";
   }, []);
 
   return (
