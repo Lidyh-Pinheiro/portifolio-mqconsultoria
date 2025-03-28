@@ -116,11 +116,9 @@ const Footer = () => {
         <div className="mt-16 pt-8 border-t border-white/10 text-center">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
-              <img 
-                src="/public/lovable-uploads/d0f47c10-8f2b-4e19-b944-edde9bb98f3b.png" 
-                alt="Logo Michele Queiroz" 
-                className="h-16 w-auto mx-auto md:mx-0"
-              />
+              <div className="h-16 w-16 bg-mq-light-blue rounded-full flex items-center justify-center text-white font-bold text-3xl mx-auto md:mx-0">
+                MQ
+              </div>
             </div>
             <div className="text-white/60 text-sm">
               © {new Date().getFullYear()} Michele Queiroz. Todos os direitos reservados.
