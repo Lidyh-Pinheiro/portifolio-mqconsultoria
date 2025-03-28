@@ -9,6 +9,7 @@ import AreasAtuacao from '../components/AreasAtuacao';
 import Diferenciais from '../components/Diferenciais';
 import ConsultoriaPolitica from '../components/ConsultoriaPolitica';
 import CursosSection from '../components/CursosSection';
+import ServiceInfo from '../components/ServiceInfo';
 import AppointmentForm from '../components/AppointmentForm';
 import Footer from '../components/Footer';
 import SocialButtons from '../components/SocialButtons';
@@ -33,6 +34,7 @@ const Index = () => {
         <AreasAtuacao />
         <ConsultoriaPolitica />
         <Diferenciais />
+        <ServiceInfo />
         <CursosSection />
         
         {/* Appointment Form Section */}
