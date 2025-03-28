@@ -1,3 +1,4 @@
+
 import { Users, MessageCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -12,7 +13,7 @@ const QuemSomos = () => {
             </div>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-mq-blue mb-6">
-            Quem Somos
+            Quem Sou Eu
           </h2>
           <div className="w-24 h-1 bg-mq-light-blue mx-auto mb-8"></div>
           <h3 className="text-2xl text-mq-blue-700 mb-8">Conheça sua mentora</h3>
@@ -24,7 +25,7 @@ const QuemSomos = () => {
               <div className="mb-8 flex justify-center">
                 <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white/30 shadow-lg">
                   <img 
-                    src="/public/lovable-uploads/148a8dab-56cf-4074-8f11-9f764cf6cf57.png" 
+                    src="/lovable-uploads/148a8dab-56cf-4074-8f11-9f764cf6cf57.png" 
                     alt="Michele Queiroz" 
                     className="w-full h-full object-cover"
                   />
