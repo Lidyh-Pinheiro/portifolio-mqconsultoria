@@ -1,5 +1,6 @@
 
 import { useEffect } from 'react';
+import { Calendar } from 'lucide-react';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import QuemSomos from '../components/QuemSomos';
